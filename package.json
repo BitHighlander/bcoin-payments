@@ -1,0 +1,17 @@
+{
+  "name": "bitcoin payments",
+  "description": "transaction detector",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rm ./allure-results/* && rm -rf ./allure-report/* && rm -rf ./coverage/*",
+    "coverage": "open coverage/lcov-report/index.html",
+    "lint": "eslint .",
+    "report": "allure generate -c && allure open",
+    "test": "eslint . && jest -c jest.unit.json"
+  },
+  "dependencies": {
+    "bcoin": "^1.0.0-beta.15"
+  },
+  "eslintIgnore": [
+  ]
+}
